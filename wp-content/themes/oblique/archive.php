@@ -29,8 +29,6 @@ get_header(); ?>
 
 			<div id="ob-grid" class="grid-layout">
 			<?php while ( have_posts() ) : the_post(); ?>
-				
-				<?php if(function_exists('the_views')) { the_views(); } ?>
 
 				<?php
 					/* Include the Post-Format-specific template for the content.

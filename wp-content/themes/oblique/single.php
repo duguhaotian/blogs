@@ -12,8 +12,6 @@ get_header(); ?>
 
 		<?php while ( have_posts() ) : the_post(); ?>
 
-			<?php if(function_exists('the_views')) { the_views(); } ?>
-
 			<?php get_template_part( 'content', 'single' ); ?>
 
 			<?php the_post_navigation(); ?>

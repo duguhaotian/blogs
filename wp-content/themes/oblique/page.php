@@ -16,7 +16,7 @@ get_header(); ?>
 		<main id="main" class="site-main" role="main">
 
 			<?php while ( have_posts() ) : the_post(); ?>
-				<?php if(function_exists('the_views')) { the_views(); } ?>
+
 				<?php get_template_part( 'content', 'page' ); ?>
 
 				<?php
